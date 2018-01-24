@@ -1,0 +1,36 @@
+{
+  "name": "gitbook-plugin-swagger-ui",
+  "version": "0.1.2",
+  "description": "A plugin to consume Swagger files into a Gitbook",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gnomeontherun/gitbook-plugin-swagger.git"
+  },
+  "keywords": [
+    "gitbook",
+    "plugin"
+  ],
+  "author": "Jeremy Wilken <gnomation@gnomeontherun.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gnomeontherun/gitbook-plugin-swagger/issues"
+  },
+  "homepage": "https://github.com/gnomeontherun/gitbook-plugin-swagger#readme",
+  "engines": {
+    "gitbook": ">=3"
+  },
+  "gitbook": {
+    "properties": {
+      "file": {
+        "type": "string",
+        "default": "",
+        "description": "Relative path to snippets file to use."
+      }
+    }
+  },
+  "dependencies": {
+    "bootprint": "^1.0.0",
+    "bootprint-swagger": "^1.0.1"
+  }
+}
